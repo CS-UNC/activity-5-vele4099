@@ -26,7 +26,7 @@ def twenty_or_more(file):
         ## Decode Each Line from input file + strip the special characters.
         word = line.strip()
         #Check Word Length
-        if word.__len__() > 20: 
+        if word.__len__() >= 20: 
             long_words.append(word)
     return(long_words)
 
@@ -38,6 +38,6 @@ def has_no_e(word):
     let = 'e'
     if word.__len__() == 0:
         return("error")
-    return(let in word)
+    return(let not in word)
 
 print(has_no_e("hello"))
