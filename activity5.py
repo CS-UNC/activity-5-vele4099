@@ -19,18 +19,19 @@ print(i.strip())
 
 #Write a function twenty_or_more(string)
 #indicating the path to the file to consider and returns all words read from the file that have more than 20 characters as a list. Note that you will have to open the file indicated in file for reading, and iterate over all lines in the file. Also remember that you can add values to a list using the .append(value) method
-def more_than_twenty(file):
+def more_than_20(file):
     long_words = []
+    words_file = open(file, 'r')
 
-    for line in file:
+    for line in words_file:
         ## Decode Each Line from input file + strip the special characters.
         word = line.strip()
         #Check Word Length
-        if word.__len__() >= 20: 
+        if len(word) >= 20: 
             long_words.append(word)
     return(long_words)
 
-results = more_than_twenty(words_file)
+results = more_than_20('CROSSWD.txt')
 
 print(results)
 
