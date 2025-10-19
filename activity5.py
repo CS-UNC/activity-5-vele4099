@@ -33,3 +33,11 @@ def twenty_or_more(file):
 results = twenty_or_more(words_file)
 
 print(results)
+
+def has_no_e(word):
+    let = 'e'
+    if word.__len__() == 0:
+        return("error")
+    return(let in word)
+
+print(has_no_e("hello"))
