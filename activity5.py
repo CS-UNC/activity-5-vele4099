@@ -39,3 +39,9 @@ def has_no_e(word):
     return(let not in word)
 
 print(has_no_e("hello"))
+
+def uses_only(word,letters):
+    for let in letters:
+        if let not in word:
+            return False
+    return True
