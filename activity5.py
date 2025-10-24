@@ -43,6 +43,7 @@ print(has_no_e("hello"))
 
 def uses_only(word,letters):
     for let in letters:
+        #for each letter, check [if] inside string {word}
         if let not in word:
             return False
     return True
