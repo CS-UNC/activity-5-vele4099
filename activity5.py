@@ -9,13 +9,12 @@ def twenty_or_more(file):
         ## Decode Each Line from input file + strip the special characters.
         word = line.strip()
         #Check Word Length
-        if len(word) >= 20: 
+        if len(word) > 20: 
             long_words.append(word)
     return(long_words)
 
 results = twenty_or_more('CROSSWD.txt')
 
-print(results)
 
 def has_no_e(word):
     let = 'e'
