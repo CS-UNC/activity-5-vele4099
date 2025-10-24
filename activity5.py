@@ -13,14 +13,9 @@ def twenty_or_more(file):
             long_words.append(word)
     return(long_words)
 
-results = twenty_or_more('CROSSWD.txt')
-
-
 def has_no_e(word):
     let = 'e'
     return(let not in word)
-
-print(has_no_e("hello"))
 
 def uses_only(word,letters):
     for let in letters:
