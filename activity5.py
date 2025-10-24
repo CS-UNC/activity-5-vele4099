@@ -47,3 +47,7 @@ def all_uses_only(file, letters):
             valid_words.append(word)
         #return our list
     return (valid_words)
+
+done = all_uses_only("CROSSWD.txt", "ag")
+
+print(done)
