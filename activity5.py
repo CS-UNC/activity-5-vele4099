@@ -1,7 +1,6 @@
 
-#Write a function twenty_or_more(string)
-#indicating the path to the file to consider and returns all words read from the file that have more than 20 characters as a list. Note that you will have to open the file indicated in file for reading, and iterate over all lines in the file. Also remember that you can add values to a list using the .append(value) method
-def more_than_twenty(file):
+
+def more_than_20(file):
     long_words = []
     words_file = open(file, 'r')
 
